@@ -14,6 +14,24 @@ paywall.
 ![Screens 1–5](screens/strip-1-5.png)
 ![Screens 6–10](screens/strip-6-10.png)
 
+## The design system
+
+**Paper and ink, with a marigold spark.** Warm paper page, near-black warm ink, and exactly one
+saturated accent — no second hue competing for the same job.
+
+- **Full-bleed ink hero blocks**, rounded only at the bottom, so the opener and the plan reveal
+  read as printed stock rather than as cards floating on a tint.
+- **The typographic scale does the work**: a 44pt numeral against an 11pt tracked label carries
+  the 300-pages-versus-15-minutes trade without an illustration.
+- **The selected state inverts** — ink fill, paper text, accent sub-line — instead of tinting.
+  Unmissable at a glance, and it changes no geometry, so nothing reflows when you tap.
+- **The paywall goes dark.** Nine light screens precede it, so the money moment reads as arriving
+  somewhere rather than as one more card. The CTA is the only marigold fill on the screen.
+
+Every colour is a theme token, so the whole system re-skins from `COLORS` in `build.py`. There
+are no images anywhere in the flow — the visual interest is composition, scale and contrast,
+which also means nothing here waits on an asset.
+
 ## What changed, and why
 
 Each row is a pattern from Adapty's onboarding and paywall teardown libraries. Impact ranges are
